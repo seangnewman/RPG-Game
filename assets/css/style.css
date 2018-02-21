@@ -1,0 +1,64 @@
+html{
+  font-size: 18px;
+  background: url("../images/potter-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+
+body{
+  width: 95%;
+  background: transparent;
+  margin : 1rem;
+}
+
+header{
+  text-align: right;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+#rpgSpan{
+    color: goldenrod;
+    font-family: 'Butcherman', cursive;
+    font-size: 4rem;
+
+}
+
+#rpgCharacters, #rpgAvailableToAttack{
+  width:100%;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+}
+
+
+
+.rpgContainer, rpgAvailableToAttack{
+    width:10rem;
+    height: 10.5rem;
+    overflow: hidden;
+    font-family: 'Sirin Stencil', cursive; 
+    color: whitesmoke;
+    margin: .125;
+    background: transparent;
+    font-weight: bold;
+}
+
+.rpgImageContainer{
+   
+  background-size: 100% 100%;
+  height: 8rem;
+  width:8rem;
+  margin: 0 1rem 0 1rem;
+}
+.rpgTitle, .rpgFooter{
+    width: 100%;
+    text-align: center;
+     
+    margin : 0 0 .25rem 0;
+    font-size: .75rem;
+}
+
+ 
+ 
