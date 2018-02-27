@@ -7,6 +7,21 @@ html{
   
 }
 
+.lightning{
+  font-size: 18px;
+  background: url("../images/potter-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  filter: brightness();
+  
+}
+
+.flashit{
+  animation: flash ease-out 2s infinite;
+}
+
+
 body{
   width: 95%;
   background: transparent;
@@ -88,4 +103,12 @@ header{
   font-size: 2rem;
 }
  
- 
+ /*  Keyframes  */
+ @keyframes flash {
+	from { opacity: 0; } 
+    92% { opacity: 0; }
+	93% { opacity: 0.6; }
+    94% { opacity: 0.2; }
+    96% { opacity: 1; } 
+	to { opacity: 0; }
+}

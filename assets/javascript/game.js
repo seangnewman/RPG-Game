@@ -1,7 +1,20 @@
 var attackIndex;
 var defendIndex;
 var combatMessage = '';
-
+var curses = ["Confringo", 
+          "Crucio", 
+          "Mucus ad Nauseam", 
+          "Expulso", 
+          "Petrificus Totalus", 
+          "Geminio", 
+          "Calvario", 
+          "Imperio", 
+          "Locomotor Wibbly", 
+          "Avada Kedavra",
+          "Locomotor Mortis",
+          "Reducto",
+          "Slugulus Eructo",
+          "Mimble Wimble" ];
 
 // Wait until all objects on DOM have loaded
 $(document).ready(function() {
@@ -84,7 +97,8 @@ $('#rpgAttackButton').on("click", function(){
         //remove the character from the game
         $("#rpgCurrentAttack .rpgContainer").remove();
         //Display rather modest message
-        combatMessage = `<p> ${rpgCharacter[attackIndex].title} has crushed ${rpgCharacter[defendIndex].title} with an foul mouthed curse!</p>`;
+        curse = Math.floor(Math.random() * curses.length);
+        combatMessage = `<p> ${rpgCharacter[attackIndex].title} has crushed ${rpgCharacter[defendIndex].title} with a ${curses[curse]}  curse!</p>`;
         $('#rpgCombatMessage').html(combatMessage);
     }
     
@@ -95,6 +109,9 @@ $('#rpgAttackButton').on("click", function(){
         // Show a new button, ask to play again
         $('#rpgResetButton').css("display","block");
     }
+
+    $('#rpgCurrentAttack').addClass("lightning");
+    
 
   });
   
